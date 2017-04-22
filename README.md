@@ -1,6 +1,6 @@
 # npmtest-grunt-rsync
 
-#### basic test coverage for  [grunt-rsync (v2.0.1)](https://github.com/jedrichards/grunt-rsync)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-rsync.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-rsync) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-rsync.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-rsync)
+#### basic test-coverage for  [grunt-rsync (v2.0.1)](https://github.com/jedrichards/grunt-rsync)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-rsync.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-rsync) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-rsync.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-rsync)
 
 #### A Grunt task for accessing the file copying and syncing capabilities of the rsync command line utility. Uses the rsyncwrapper npm module for the core functionality.
 
@@ -35,16 +35,22 @@
 ```json
 
 {
-    "author": {
-        "name": "Jed Richards"
+    "name": "grunt-rsync",
+    "version": "2.0.1",
+    "description": "A Grunt task for accessing the file copying and syncing capabilities of the rsync command line utility. Uses the rsyncwrapper npm module for the core functionality.",
+    "main": "grunt.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jedrichards/grunt-rsync.git"
     },
-    "bugs": {
-        "url": "https://github.com/jedrichards/grunt-rsync/issues"
+    "homepage": "https://github.com/jedrichards/grunt-rsync",
+    "bugs": "https://github.com/jedrichards/grunt-rsync/issues",
+    "scripts": {
+        "test": "grunt test"
     },
     "dependencies": {
         "rsyncwrapper": "2.0.1"
     },
-    "description": "A Grunt task for accessing the file copying and syncing capabilities of the rsync command line utility. Uses the rsyncwrapper npm module for the core functionality.",
     "devDependencies": {
         "grunt": "1.0.1",
         "grunt-contrib-clean": "1.0.0",
@@ -53,16 +59,6 @@
         "grunt-vows": "0.4.2",
         "vows": "0.8.1"
     },
-    "directories": {},
-    "dist": {
-        "shasum": "b97dd154216acc8b492456053eebb3525ca6f91f",
-        "tarball": "https://registry.npmjs.org/grunt-rsync/-/grunt-rsync-2.0.1.tgz"
-    },
-    "engines": {
-        "node": ">=0.10.25"
-    },
-    "gitHead": "9e53bf3a223294b363ed72ce129a25ad68fcf51b",
-    "homepage": "https://github.com/jedrichards/grunt-rsync",
     "keywords": [
         "rsync",
         "grunt plugin",
@@ -76,23 +72,14 @@
         "ssh",
         "exclude patterns"
     ],
+    "author": {
+        "name": "Jed Richards"
+    },
     "license": "MIT",
-    "main": "grunt.js",
-    "maintainers": [
-        {
-            "name": "jedrichards"
-        }
-    ],
-    "name": "grunt-rsync",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/jedrichards/grunt-rsync.git"
+    "engines": {
+        "node": ">=0.10.25"
     },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "version": "2.0.1"
+    "bin": {}
 }
 ```
 
